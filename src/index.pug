@@ -25,3 +25,22 @@ block content
                 .hero__downbutton
                     .scroll-down
                     a(href="").scroll-down__btn Скролл
+        section.about
+            .container.about__container
+                .about__user
+                    .user
+                        .user__avatar
+                            .user__avatar-style
+                                +image("content/user.jpg", 'user__avatar-pic')
+                        -
+                            var userInfo = [
+                                ["Проживаю:", "Алматы"],
+                                ["Возраст:", "29 лет"],
+                                ["Родился:", "8 октября 1991"]
+                            ];
+
+                        table.user__data
+                            each item in userInfo
+                                tr.user__data-row
+                                    td.user__data-title #{item[0]}
+                                    td.user__data-content #{item[1]}
