@@ -7,7 +7,7 @@
     width: 66%;
     position: relative;
     z-index: 10;
-    height: 340px;
+    height: 549px;
 
     &:before {
         content: attr(data-slide);
@@ -19,7 +19,7 @@
         font-size: 400px;
         font-weight: 800;
         margin-left: -8%;
-        color: rgba($text-color, .05);
+        color: #E6E6E6;
     }
 }
 
@@ -49,8 +49,9 @@
 .works-slider__thumbs {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 58px;
     display: flex;
+    flex-direction: row-reverse
 }
 
 .works-slider__thumb-item {
@@ -70,8 +71,8 @@
 }
 
 .works-slider__buttons {
-
-    justify-self: flex-end;
+    align-self: flex-end;
+    margin-bottom: 58px;
 }
 
 .works-slider__btn {
