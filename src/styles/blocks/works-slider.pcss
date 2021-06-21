@@ -83,16 +83,14 @@
     position: relative;
     &:before {
         content: "";
-        background: svg-load('arrow-down.svg', fill=#fff, width=100%, height=100%) center center no-repeat;
+        background: svg-load('icon_fwd.svg', fill=#fff, width=100%, height=100%) center center no-repeat;
         display: block;
-        width: 8px;
-        height: 10px;
+        width: 10.12px;
+        height: 17.37px;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(-90deg);
-        transition: opacity .3s, margin-top .3s;
-        opacity: .3;
+        top: 40%;
+        left: 42%;
+        transition: opacity .3s;
     }
     &:hover {
         &:before {
@@ -101,7 +99,8 @@
     }
     &_prev {
         &:before {
-            transform: translate(-50%, -50%) rotate(-270deg);
+            transform: translate(-50%, -50%) rotate(-180deg);
+            opacity: .3;
         }
         &:active {
             &:before {
@@ -120,6 +119,9 @@
 
 .works-slider__data {
     width: 24%;
+    color:#333C49;
+    z-index: 10;
+    margin-left: 105px;
 }
 
 .works-slider__thumb-link {
@@ -136,6 +138,12 @@
 .works-slider__tag-item {
     margin-right: 15px;
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 22px;
+    background: #F3F6F9;
+    border-radius: 40px;
 }
 
 .works-slider__title {
@@ -146,7 +154,8 @@
 
 .works-slider__desc {
     font-weight: 600;
-    color: rgba($text-color, .7);
+    color: #333C49;
+    opacity: .7;
     line-height: 1.8;
 }
 
@@ -156,6 +165,25 @@
 
 .works-slider__link {
     display: block;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: #586ED3;
+    &:before {
+        content: "";
+        background: svg-load('link_work.svg', fill=#586ED3, width=100%, height=100%) center center no-repeat;
+        display: block;
+        width: 22.63px;
+        height: 22.63px;
+        position: absolute;
+    }
+}
+.iconed-link {
+    text-decoration: none;
+
+    padding-left: 39px;
 }
 
 
