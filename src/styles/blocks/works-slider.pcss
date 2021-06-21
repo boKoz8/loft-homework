@@ -1,6 +1,5 @@
 .works-slider {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
 }
 
@@ -51,11 +50,12 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 178px;
+    display: flex;
 }
 
 .works-slider__thumb-item {
     height: 100px;
+    width: 178px;
     transition: .2s;
     &.active,
     &:hover {
@@ -70,10 +70,8 @@
 }
 
 .works-slider__buttons {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    display: flex;
+
+    justify-self: flex-end;
 }
 
 .works-slider__btn {

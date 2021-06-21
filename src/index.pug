@@ -93,15 +93,15 @@ block content
                     .works-slider
                         .works-slider__pics(data-slide="1")
                             .works-slider__pics-content
-                                +image('content/work0.jpg', 'works-slider__fullpic')
-                                .works-slider__buttons
-                                    a(href="#").works-slider__btn.works-slider__btn_next
-                                    a(href="#").works-slider__btn.works-slider__btn_prev
+                                +image('content/slider-1.jpg', 'works-slider__fullpic')
                                 ul.works-slider__thumbs
                                     - for (var i = 4; i > 0; i--)
-                                    li.works-slider__thumb-item(class=`${i === 1 ? 'active' : ''}`)
-                                        a(href="").works-slider__thumb-link
-                                            +image(`content/work${i}.jpg`, 'works-slider__thumb')
+                                        li.works-slider__thumb-item(class=`${i === 1 ? 'active' : ''}`)
+                                            a(href="#").works-slider__thumb-link
+                                                +image(`content/slider-${i}.jpg`, 'works-slider__thumb')
+                        .works-slider__buttons
+                            a(href="#").works-slider__btn.works-slider__btn_next
+                            a(href="#").works-slider__btn.works-slider__btn_prev
                         .works-slider__data
                             ul.works-slider__tags
                                 - var tags = ['HTML', 'CSS', 'JavaScript'];
