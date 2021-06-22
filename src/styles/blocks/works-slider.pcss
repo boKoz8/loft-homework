@@ -81,6 +81,7 @@
     background: #2d3c4e;
     display: block;
     position: relative;
+    cursor: pointer;
     &:before {
         content: "";
         background: svg-load('icon_fwd.svg', fill=#fff, width=100%, height=100%) center center no-repeat;
@@ -90,11 +91,12 @@
         position: absolute;
         top: 40%;
         left: 42%;
+        opacity: 1;
         transition: opacity .3s;
     }
     &:hover {
         &:before {
-            opacity: 1;
+            opacity: .3;
         }
     }
     &_prev {

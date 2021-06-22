@@ -19,13 +19,13 @@ block content
                             - var socials = ['insta', 'vk', 'github', 'envelope'];
                             each item in socials
                                 li.socials__item
-                                    a(href=`${item === 'envelope' ? 'mailto:sabantsev@yandex.ru' : '#'}`).socials__link
+                                    a(href=`${item === 'envelope' ? 'mailto:boriskozychev@gmail.com' : '#'}`).socials__link
                                         +icon(item, 'socials__icon')
 
                 .hero__content
                     .userinfo
                         .userinfo__title Личный сайт #[br] веб разработчика
-                        .userinfo__name Владимир Астаханов
+                        .userinfo__name Борис Козычев
                 .hero__downbutton
                     .scroll-down
                         a(href="").scroll-down__btn Скролл
@@ -41,9 +41,9 @@ block content
                             .user__about
                                 -
                                     var userinfo = [
-                                        ['Проживаю:', "Новосибирск"],
-                                        ['Возраст:', "27 лет"],
-                                        ['Родился:', "1 января 1991"],
+                                        ['Проживаю:', "Алматы"],
+                                        ['Возраст:', "29 лет"],
+                                        ['Родился:', "1 октября 1991"],
                                     ];
                                 table.user__table
                                     each item in userinfo
@@ -53,7 +53,7 @@ block content
                     .about__user-text
                         .about__main-text-content
                             .about__desc Привет, меня зовут
-                            .about__title Владимир Астаханов
+                            .about__title Борис Козычев
                             .about__text-info
                                 p Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
                         .about__ps
@@ -130,25 +130,25 @@ block content
                             .reviews__btn.reviews__btn_next
                     ul.reviews__content
                         - for (var i = 0; i < 2; i++)
-                        li.reviews__content-item
-                            .quote
-                                .quote__text
-                                    p Этот парень проходил обучение веб-разработке не где-то, а в Loftschool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
-                                .quote__user
-                                    .user-min
-                                        .user-min__avatar
-                                            .user-min__pic-wrapper
-                                                +image('content/user.jpg', 'user-min__avatar-pic')
-                                        .user-min__info
-                                            .user-min__name Ковальчук Дмитрий
-                                            .user-min__occ Основатель Loftschool
+                            li.reviews__content-item
+                                .quote
+                                    .quote__text
+                                        p Этот парень проходил обучение веб-разработке не где-то, а в Loftschool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
+                                    .quote__user
+                                        .user-min
+                                            .user-min__avatar
+                                                .user-min__pic-wrapper
+                                                    +image('content/user.jpg', 'user-min__avatar-pic')
+                                            .user-min__info
+                                                .user-min__name Ковальчук Дмитрий
+                                                .user-min__occ Основатель Loftschool
     footer.footer
         .container.footer__container
             .footer__copyright
                 .footer__copyright-col
                     .footer__copyright-year &copy; 2020
                 .footer__copyright-userinfo
-                    .footer__copyright-name Владимир Астаханов
+                    .footer__copyright-name Борис Козычев
                     .footer__data-text Личный сайт веб - разработчика
             .footer__data
                 nav.menu.menu--color-white.footer__data-menu

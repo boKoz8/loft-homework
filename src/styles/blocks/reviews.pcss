@@ -21,6 +21,8 @@
     position: relative;
     border-radius: 50%;
     margin-right: 30px;
+    cursor: pointer;
+
     &:last-child {
         margin-right: 0;
     }
@@ -38,6 +40,12 @@
     &_prev {
         &:before {
             transform: translate(-50%, -50%) rotate(-180deg);
+        }
+    }
+    &:hover {
+            background-color: $text-color;
+        &:before{
+            background: svg-load('arrow-down.svg', fill=#222427) center center / contain no-repeat;
         }
     }
 }
