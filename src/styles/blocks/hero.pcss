@@ -4,6 +4,9 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 60px 0 20px;
+    @include phones {
+        height: 74vh;
+    }
 }
 
 .hero__downbutton {
@@ -12,4 +15,7 @@
     right: 0;
     display: flex;
     justify-content: center;
+    @include phones{
+        display: none;
+    }
 }

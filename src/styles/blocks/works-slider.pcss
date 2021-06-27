@@ -37,7 +37,7 @@
     @include phones {
         width: 100%;
         margin-bottom: 0;
-        height: 185px;
+        height: 14.5625rem;
         &:before {
             display: none;
         }
@@ -100,6 +100,7 @@
     @include phones {
         top: initial;
         bottom: 0;
+        margin-bottom: 0;
     }
 }
 
@@ -122,7 +123,7 @@
         opacity: 1;
         transition: opacity .3s;
     }
-    &:hover {
+    &:hover, :focus {
         &:before {
             opacity: .3;
         }
@@ -130,7 +131,6 @@
     &_prev {
         &:before {
             transform: translate(-50%, -50%) rotate(-180deg);
-            opacity: .3;
         }
         &:active {
             &:before {
