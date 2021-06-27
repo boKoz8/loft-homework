@@ -1,3 +1,8 @@
+.skills {
+    @include phones {
+        text-align: center;
+    }
+}
 .skills-row__title {
     margin-bottom: 26px;
     font-size: 24px;
@@ -8,6 +13,9 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: -4%;
+    @include phones {
+        justify-content: center;
+    }
 }
 
 .skills-row__item {

@@ -2,12 +2,21 @@
     display: flex;
     align-items: center;
     margin-bottom: 95px;
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 33px;
+    }
 }
 
 .reviews__title.section-title {
     margin-bottom: 0;
     margin-right: 10%;
     color: $text-color;
+    @include phones {
+        margin-right: 0%;
+        margin-bottom: 25px;
+    }
 }
 
 .reviews__buttons {
@@ -60,12 +69,23 @@
     align-items: flex-start;
     will-change: transform;
     transition: transform .3s;
+    @include tablets {
+        margin-left: 0;
+    }
+    @include phones {
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
 .reviews__content-item {
     flex-shrink: 0;
     padding-right: 30px;
     width: 50%;
+    @include phones {
+        margin-right: 0;
+        width: 100%;
+    }
 
     &:last-child {
         margin-right: 0;

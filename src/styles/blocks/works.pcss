@@ -1,10 +1,21 @@
 .works__content {
     padding-bottom: 209px;
+    @include phones {
+        padding-bottom: 0;
+    }
 }
 
 .works__container {
     padding: 0 9%;
+    @include phones {
+        padding: 0;
+        width: 100%;
+    }
 }
 
 .works__section-title {
+    @include phones {
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }

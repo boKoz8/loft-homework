@@ -1,6 +1,10 @@
 .works-slider {
     display: flex;
     align-items: flex-start;
+    @include tablets {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 }
 
 .works-slider__pics {
@@ -8,6 +12,10 @@
     position: relative;
     z-index: 10;
     height: 549px;
+    @include tablets {
+        margin-bottom: 105px;
+        width: 86%;
+    }
 
     &:before {
         content: attr(data-slide);
@@ -20,6 +28,19 @@
         font-weight: 800;
         margin-left: -8%;
         color: #E6E6E6;
+        @include desktop {
+            top: 0;
+            transform: translateY(-15%);
+            margin-left: -11%;
+        }
+    }
+    @include phones {
+        width: 100%;
+        margin-bottom: 0;
+        height: 185px;
+        &:before {
+            display: none;
+        }
     }
 }
 
@@ -51,7 +72,10 @@
     right: 0;
     bottom: 58px;
     display: flex;
-    flex-direction: row-reverse
+    flex-direction: row-reverse;
+    @include phones {
+        display: none;
+    }
 }
 
 .works-slider__thumb-item {
@@ -73,6 +97,10 @@
 .works-slider__buttons {
     align-self: flex-end;
     margin-bottom: 58px;
+    @include phones {
+        top: initial;
+        bottom: 0;
+    }
 }
 
 .works-slider__btn {
@@ -124,6 +152,21 @@
     color:#333C49;
     z-index: 10;
     margin-left: 105px;
+    @include tablets {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 18%;
+        text-align: center;
+    }
+
+    @include phones {
+        padding: 0 5%;
+        text-align: left;
+        align-items: center;
+        margin-left: 0;
+    }
 }
 
 .works-slider__thumb-link {
@@ -146,12 +189,19 @@
     padding: 14px 22px;
     background: #F3F6F9;
     border-radius: 40px;
+    &:last-child{
+        margin-right: 0;
+    }
 }
 
 .works-slider__title {
     font-size: 30px;
     margin-bottom: 42px;
     font-weight: bold;
+    @include phones{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
 }
 
 .works-slider__desc {

@@ -2,10 +2,21 @@
     background: url('~images/bg/bg-middle-section.jpg') center top / cover no-repeat;
     padding: 140px 0 147px;
     margin-bottom: 114px;
+    @include phones {
+        padding-top: 81px;
+        margin-bottom: 91px;
+        padding-bottom: 0;
+    }
 }
 
 .values__container {
     position: relative;
+    @include tablets {
+        padding-bottom: 350px;
+    }
+    @include phones {
+        width: 100%;
+    }
     &:before {
         content: "";
         position: absolute;
@@ -15,6 +26,23 @@
         height: 130%;
         width: 115%;
         left: 0;
+        @include tablets {
+            bottom: 0;
+            left: 50%;
+            height: 300px;
+            transform: translateX(-50%);
+            background-position: center center;
+        }
+
+        @include phones {
+            width: 100%;
+            transform: rotate(270deg);
+            left: 0;
+            height: 24.4375rem;
+            width: 100%;
+            background-position: left bottom;
+            bottom: -13px;
+        }
     }
 }
 
@@ -30,6 +58,20 @@
 
 .values__title-container {
     width: 38%;
+    @include desktop {
+        width: 42%;
+        margin-left: 0;
+    }
+    @include tablets {
+        width: 68%;
+        text-align: center;
+    }
+    @include phones {
+        width: 100%;
+        margin-left: 0;
+        text-align: left;
+        padding: 0 9%;
+    }
 }
 
 .values__title-text {
@@ -42,13 +84,22 @@
     color: rgba($text-color, .5);
     font-weight: 600;
     line-height: 1.8;
+    @include phones{
+        color: rgba($text-color, .8);
+    }
 }
 
 .values__widget {
     display: flex;
     justify-content: flex-end;
+    @include tablets {
+        justify-content: center;
+    }
 }
 
 .values__widget-container {
     width: 66%;
+    @include tablets {
+        width: 95%;
+    }
 }
