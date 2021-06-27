@@ -21,6 +21,9 @@ block content
                                 li.socials__item
                                     a(href=`${item === 'envelope' ? 'mailto:boriskozychev@gmail.com' : '#'}`).socials__link
                                         +icon(item, 'socials__icon')
+                    .header__menu-mobile
+                        a(href=`#`).menu-mobile__link
+                            +icon('menu', 'menu-mobile__icon')
 
                 .hero__content
                     .userinfo

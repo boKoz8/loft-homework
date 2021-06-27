@@ -7,6 +7,16 @@
     &:last-child{
         margin-right: 0;
     }
+    @include phones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border: 1px solid currentColor;
+        position: relative;
+        border-radius: 50%;
+    }
 }
 .socials__icon{
     width: 25px;
@@ -14,5 +24,14 @@
     fill: $text-color;
     &:hover, :active, :focus{
         fill: $hover-color;
+    }
+    @include phones {
+        fill: $text-color;
+        opacity: .3;
+    }
+}
+.socials__link{
+    @include phones {
+        margin-top: 5px;
     }
 }
