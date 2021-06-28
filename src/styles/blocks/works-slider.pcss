@@ -36,7 +36,7 @@
     }
     @include phones {
         width: 100%;
-        margin-bottom: 0;
+        margin-bottom: 60px;
         height: 14.5625rem;
         &:before {
             display: none;
@@ -97,10 +97,15 @@
 .works-slider__buttons {
     align-self: flex-end;
     margin-bottom: 58px;
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+    z-index: 15;
     @include phones {
         top: initial;
         bottom: 0;
         margin-bottom: 0;
+        right: 0;
     }
 }
 
@@ -230,6 +235,10 @@
         width: 22.63px;
         height: 22.63px;
         position: absolute;
+    }
+
+    &:hover {
+        text-decoration: underline;
     }
 }
 .iconed-link {
