@@ -1,0 +1,31 @@
+.thumbs {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    @include phones {
+        display: none;
+    }
+}
+.thumbs__item {
+    height: 100px;
+    width: 178px;
+    transition: .2s;
+    overflow: hidden;
+    &.active,
+    &:hover {
+        outline: 3px solid #f29400;
+    }
+}
+
+.thumbs__link {
+    display: block;
+    height: 100%;
+    background: transparent;
+    padding: 0;
+}
+
+.thumbs__pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,143 @@
+.works-preview {
+    display: flex;
+    justify-content: space-between;
+    color: #333C49;
+    @include tablets {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+.works-preview__pictures {
+    width: 58%;
+    position: relative;
+    height: 549px;
+    @include tablets {
+        margin-bottom: 105px;
+        width: 86%;
+    }
+    &:before {
+        content: attr(data-slide);
+        position: absolute;
+        line-height: 1;
+        font-size: 350px;
+        right: 0;
+        font-weight: 800;
+        color: rgba(65,76,99,.05);
+        transform: translateX(59%);
+    }
+
+    @include phones {
+        width: 100%;
+        margin-bottom: 60px;
+        height: 14.5625rem;
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.works-preview__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.works-preview__thumbs {
+    position: absolute;
+    right: 0;
+    bottom: 58px;
+    z-index: 1;
+}
+
+.works-preview__btns {
+    position: absolute;
+    width: 50px;
+    right: 0;
+
+    align-self: flex-end;
+    bottom: 58px;
+    right: -50px;
+    @include phones {
+        top: initial;
+        bottom: 0;
+        margin-bottom: 0;
+        right: 0;
+    }
+}
+
+
+
+.works-preview__info {
+    width: 32%;
+    @include tablets {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 18%;
+        text-align: center;
+    }
+
+    @include phones {
+        padding: 0 5%;
+        text-align: left;
+        align-items: center;
+        margin-left: 0;
+    }
+}
+
+.works-preview__tags {
+    margin-bottom: 50px;
+}
+
+
+.works-preview__title {
+    font-size: 30px;
+    margin-bottom: 42px;
+    font-weight: bold;
+    @include phones{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+}
+
+.works-preview__desc {
+    font-weight: 600;
+    color: rgba(#333C49, .8);
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.iconed-link {
+    text-decoration: none;
+    color: #586ED3;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 39px;
+    &:before {
+        content: "";
+        background: svg-load('link_work.svg', fill=#586ED3, width=100%, height=100%) center center no-repeat;
+        display: block;
+        width: 22.63px;
+        height: 22.63px;
+        position: absolute;
+    }
+    &:hover{
+        text-decoration: underline;
+    }
+    @include tablets{
+
+        width: 100%;
+        font-size: 14px;
+        line-height: 19.07px;
+    }
+    @include phones{
+        &:before{
+            left: 5%;
+        }
+    }
+}
