@@ -1,6 +1,18 @@
+.slider{
+    padding: 0 9%;
+}
 .slider__header {
     margin-bottom: 95px;
     display: flex;
+}
+.slider__title{
+    margin-bottom: 0;
+    margin-right: 10%;
+    color: $text-color;
+    @include phones {
+        margin-right: 0%;
+        margin-bottom: 25px;
+    }
 }
 
 .slider__buttons {
@@ -25,5 +37,15 @@
 
     &:last-child {
         margin-right: 0;
+    }
+}
+.slider__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 95px;
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 33px;
     }
 }

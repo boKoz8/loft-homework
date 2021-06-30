@@ -79,29 +79,10 @@ block content
                 .section-title.works__section-title Мои работы
                 .works__content
                     #preview-component
-    section.contacts
-        .container.contacts__container
-            .contacts__about
-                .reviews
-                    .reviews__header
-                        .reviews__title.section-title Что обо мне говорят
-                        .reviews__buttons
-                            .reviews__btn.reviews__btn_prev
-                            .reviews__btn.reviews__btn_next
-                    ul.reviews__content
-                        - for (var i = 0; i < 2; i++)
-                            li.reviews__content-item
-                                .quote
-                                    .quote__text
-                                        p Этот парень проходил обучение веб-разработке не где-то, а в Loftschool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
-                                    .quote__user
-                                        .user-min
-                                            .user-min__avatar
-                                                .user-min__pic-wrapper
-                                                    +image('content/user.jpg', 'user-min__avatar-pic')
-                                            .user-min__info
-                                                .user-min__name Ковальчук Дмитрий
-                                                .user-min__occ Основатель Loftschool
+    section.reviews
+        .container
+            #slider-component
+
     footer.footer
         .container.footer__container
             .footer__copyright
