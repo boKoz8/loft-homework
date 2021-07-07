@@ -18,6 +18,9 @@ new Vue({
             }
         };
     },
+    mounted () {
+        this.handleResize()
+    },
     computed: {
         slider() {
             return this.$refs["slider"].$swiper;
@@ -42,7 +45,6 @@ new Vue({
         },
         handleResize() {
             this.sliderOptions.slidesPerView = window.innerWidth > 768 ? 2 : 1;
-            console.log(this.sliderOptions.slidesPerView)
         }
     },
     created() {
