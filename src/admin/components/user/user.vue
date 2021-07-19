@@ -1,7 +1,7 @@
 <template>
   <div class="user-component">
     <avatar size="2.7" :src="userPic" />
-    <div class="username">Владимир Астаханов</div>
+    <div class="username">Борис Козычев</div>
   </div>
 </template>
 
