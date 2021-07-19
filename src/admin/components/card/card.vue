@@ -18,13 +18,12 @@ export default {
   props: {
     title: {
       type: String,
-      default: "" 
+      default: ""
     },
     simple: Boolean
   }
 };
 </script>
-
 
 <style lang="postcss" src="./card.pcss" scoped>
 </style>

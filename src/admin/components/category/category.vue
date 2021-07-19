@@ -28,6 +28,7 @@ import card from "../card";
 import editLine from "../editLine";
 import skill from "../skill";
 import skillAddLine from "../skillAddLine";
+
 export default {
   components: {
     card, editLine, skill,
@@ -55,10 +56,12 @@ export default {
 <style lang="postcss">
 .item {
   margin-bottom: 30px;
+
   &:last-child {
     margin-bottom: 0;
   }
 }
+
 .bottom-line {
   padding-top: 70px;
   margin-top: auto;
